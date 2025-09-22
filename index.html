@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyangshu AI - ChatGPT-like Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>✨ Priyangshu AI</h1>
+                <span class="subtitle">Advanced AI Assistant</span>
+            </div>
+            <div class="header-buttons">
+                <button id="clearChat" class="btn-secondary">Clear Chat</button>
+                <button id="themeToggle" class="btn-secondary">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Priyangshu AI:</strong> Hello! I'm Priyangshu AI, your advanced AI assistant. I can help you with text conversations and generate images. How can I assist you today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-options">
+                    <button id="textMode" class="mode-btn active">💬 Text Chat</button>
+                    <button id="imageMode" class="mode-btn">🎨 Image Generation</button>
+                </div>
+                
+                <div class="input-area">
+                    <textarea id="messageInput" placeholder="Type your message here... (For images, start with 'generate image' or 'create image')" rows="3"></textarea>
+                    <button id="sendButton" class="send-btn">Send</button>
+                </div>
+                
+                <div class="features">
+                    <span class="feature-tag">🚀 Fast Responses</span>
+                    <span class="feature-tag">🎨 Image Generation</span>
+                    <span class="feature-tag">🌍 Multi-language</span>
+                    <span class="feature-tag">💾 History</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
